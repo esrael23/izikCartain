@@ -29,7 +29,7 @@ const Successes = () => {
             <Grid item xs="12" sm="12" md="6">
           <Box  sx={{display: 'flex', justifyContent:'center', alignItems:'center'}}  height="400px" fullwidth>
             <Box justifyContent={'center'}>
-              <Typography variant="h6" color={'primary'}>MISSION</Typography>
+              <Typography variant="h6" color={'primary'}>successes</Typography>
             <Typography variant="subtitle1" >
               {data.missionDetail}
               </Typography>
