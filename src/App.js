@@ -1,5 +1,5 @@
-
-import { ThemeProvider } from '@mui/material';
+import "./index.css"
+import { ThemeProvider, responsiveFontSizes } from '@mui/material';
 import Home from './pages/home/Home';
 import theme from './Theme';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -9,7 +9,8 @@ import Contacts from './pages/contacts/Contacts';
 import Appindex from './components/appbar/appindex';
 import Footer from './components/footer/Footer';
 
-
+// let theme = createTheme();
+// theme = responsiveFontSizes(theme);
 function App() {
   return (
     <ThemeProvider theme={theme}>

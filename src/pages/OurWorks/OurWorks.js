@@ -1,8 +1,13 @@
 import React from 'react'
+import Gallery from '../../components/ourWorkComponent/Gallery'
+import OurWorkheader from '../../components/ourWorkComponent/ourWorkheader'
 
 const OurWorks = () => {
   return (
-    <div>OurWorks</div>
+    <div>
+      <OurWorkheader/>
+      <Gallery/>
+    </div>
   )
 }
 

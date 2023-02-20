@@ -37,15 +37,18 @@ const Appbarmobile = () => {
 </AppBar>
 
 <Menu
-        id="basic-menu"
+        // id="basic-menu"
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
         MenuListProps={{
           'aria-labelledby': 'basic-button',
         }}
+       
+
+        sx={{marginRight: '20px'}}
       >
-        <Stack spacing={2} sx={{width: '180px'}}>
+        <Stack spacing={2} sx={{width: '180px'}} >
           <Button onClick={handleClose} href="/">home</Button>
         <Button onClick={handleClose} href="/aboutus">About us</Button>
         <Button onClick={handleClose} href="/work">work</Button>

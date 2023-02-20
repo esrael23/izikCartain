@@ -37,7 +37,7 @@ const Appbardesktop = () => {
              >home</Button>
           <Button href='/aboutUs' sx={{fontSize:'20px'}}>About us </Button>
           <Button href='/work' sx={{fontSize:'20px'}}>work</Button>
-          <Button href='/contacts' sx={{fontSize:'20px'}}>Contacts</Button>
+          <Button href='/contact' sx={{fontSize:'20px'}}>Contacts</Button>
         </Stack>
       </Toolbar>
       </Container>

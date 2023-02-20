@@ -10,7 +10,7 @@ const Successes = () => {
   const greys = grey[50];
   return (
     <>
-    <Box width={'100%'} sx={{background:greys}} >
+    <Box width={'100%'} >
 
    
     <Container maxWidth="xl" py='1'>

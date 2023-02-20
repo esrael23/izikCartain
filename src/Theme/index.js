@@ -1,5 +1,7 @@
 
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
+// let theme = createTheme();
+// theme = responsiveFontSizes(theme);
 
 
 export const Colors ={
