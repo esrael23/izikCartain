@@ -4,14 +4,34 @@ import Grid from '@mui/material/Grid'
 import { Box,Dialog} from '@mui/material';
 import { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
+import { getDownloadURL, listAll, ref } from 'firebase/storage';
+import { storage } from '../../firebase-config/firebase';
+
+
+const imagesListRef= ref(storage, 'images/');
 
 
 export default function Gallery() {
 const [open, setopen] = useState(false);
 const [selectedPhoto, setSelectedPhoto] = useState([])
+const [imagelist, setimagelist] = useState([]);
 const handleClose = () => {
   setopen(false);
 };
+
+// fatch to firebase
+
+React.useEffect(() => {
+  listAll(imagesListRef).then((response) => {
+    console.log("ddddddddddd", response);
+    response.items.forEach((item) => {
+      getDownloadURL(item).then((url) => {
+        setimagelist((prev) =>[...prev, url])
+      })
+    })
+  })
+
+},[])
 
 const changecontent = (photo) => {
   // console.log("nammmmmmmmmmmmmmmmeL ", photo)
@@ -22,20 +42,18 @@ const changecontent = (photo) => {
 
   return (
     <>
-    <Container maxWidth="xl" sx={{marginTop: '150px' }}>
+    <Container maxWidth="lg" sx={{marginTop: '110px' }}>
 
-    <Grid container spacing={2}>
-      {itemData.map((photo) =>{
+    <Grid container spacing={1}>
+      {imagelist.map((photo) =>{
         return(
-          <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Grid item xs={6} sm={6} md={4} lg={3}>
                   <Box
                    onClick={() => changecontent(photo)} 
-                   sx={{backgroundImage:`url(${photo.img})`,backgroundSize:'cover',backgroundPosition:'center',backgroundRepeat:'no-repeat', width:"100%", height:'300px' }}></Box>
+                   sx={{backgroundImage:`url(${photo})`,backgroundSize:'cover',backgroundPosition:'center',backgroundRepeat:'no-repeat', width:"100%", height:{xs :'200px', sm: '300px'} }}></Box>
                   </Grid> 
         )
       })}
-      
-      
     </Grid>
     </Container> 
     {selectedPhoto.map((pop) => {
@@ -48,15 +66,11 @@ const changecontent = (photo) => {
         onClose={handleClose}
         // sx={{width: '1200px' }}
         maxWidth={1500}
-
-          
-        
-         
          >
          
 
 
-        <Box sx={{backgroundImage: `url(${pop.img})`, backgroundPosition:'center', backgroundSize: 'cover', display:'flex', justifyContent: 'end',width: {xs: '350px', md: '600px'}, height: {xs:'350px',md:'500px'},  }}  >
+        <Box sx={{backgroundImage: `url(${pop})`, backgroundPosition:'center', backgroundSize: 'cover', display:'flex', justifyContent: 'end',width: {xs: '350px', md: '600px'}, height: {xs:'350px',md:'500px'},  }}  >
           {/* <img src={pop.img} alt={pop.title} style={{width:'100%', height: '100%'}} /> */}
            <CloseIcon onClick={() => setopen(false)} color={'primary'} />
        

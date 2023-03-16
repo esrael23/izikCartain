@@ -1,7 +1,7 @@
-import Imageone from "../image/images (2).jpg"
-import Imagetwo from "../image/izikpng.png"
-import Imagethree from "../image/images (2).jpg"
-import Imagefour from "../image/images (2).jpg"
+import Imageone from "../image/B-bedroom.jpg"
+import Imagetwo from "../image/photo1678183268 (2).jpeg"
+import Imagethree from "../image/Stage curtain.jpg"
+import Imagefour from "../image/G-familyroom.jpg"
 
 export const ProductData = [
   {
@@ -10,18 +10,18 @@ export const ProductData = [
     alt: 'proimage'
   },
    {
-    title: " logo corutain",
+    title: "DINNING ROOM",
     image: Imagetwo,
     alt: 'proimage'
   },
     
    {
-    title: " bedroom corutain",
+    title: " Stage curtain",
     image: Imagethree,
     alt: 'proimage'
   },
    {
-    title: " bedroom corutain",
+    title: " living room",
     image: Imagefour,
     alt: 'proimage'
   }

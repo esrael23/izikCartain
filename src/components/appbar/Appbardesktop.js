@@ -33,11 +33,11 @@ const Appbardesktop = () => {
         <Stack direction={'row'} spacing={2} >
           <Button
            href='/'
-            sx={{fontSize:'20px', fontWeight: 'none'}}
+            sx={{fontSize:'15px', fontWeight: 'none'}}
              >home</Button>
-          <Button href='/aboutUs' sx={{fontSize:'20px'}}>About us </Button>
-          <Button href='/work' sx={{fontSize:'20px'}}>work</Button>
-          <Button href='/contact' sx={{fontSize:'20px'}}>Contacts</Button>
+          <Button href='/aboutUs' sx={{fontSize:'15px'}}>About us </Button>
+          <Button href='/work' sx={{fontSize:'15px'}}>work</Button>
+          <Button href='/contact' sx={{fontSize:'15px'}}>Contacts</Button>
         </Stack>
       </Toolbar>
       </Container>

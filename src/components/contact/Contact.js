@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Container from '@mui/material/Container'
 import { Button,Box, Card, CardContent, Grid, TextField, Typography } from '@mui/material'
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_brttqyt', 'template_imqz0kf', form.current, 'sskl72LnYjI6BWKVG')
+      .then((result) => {
+          console.log(result.text);
+          console.log("message sent")
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
    
     <Container maxWidth="xl" mx={4}  >
@@ -27,22 +43,22 @@ const Contact = () => {
 
         <Card sx={{paddingY:3}} elevation={0}>
             <CardContent>
-              <form>
+              <form ref={form} onSubmit={sendEmail}>
               <Grid container rowSpacing={4} columnSpacing={2}>
                 <Grid item xs={6} sm={6}>
-                  <TextField variant='outlined' placeholder='enter first name!' label="First name" fullWidth required/>
+                  <TextField variant='outlined' placeholder='enter first name!' label="First name" fullWidth required name='user_name'/>
                 </Grid>
                 <Grid item xs={6} sm={6}>
-                  <TextField variant='outlined' placeholder='enter last name!' label="Last name" fullWidth />
+                  <TextField variant='outlined' placeholder='enter last name!' label="Last name" fullWidth name='user_lastName'/>
                 </Grid>
                 <Grid item xs={12} sm={12}>
-                  <TextField type={'email'} variant='outlined' placeholder='enter last name!' label="Last name" fullWidth required/>
+                  <TextField type={'email'} variant='outlined' placeholder='enter last name!' label="Last name" fullWidth required name='user_email'/>
                 </Grid>
                 <Grid item xs={12} sm={12}>
-                  <TextField multiline rows={4} variant='outlined' placeholder='enter massage name!' label="Massage" fullWidth required/>
+                  <TextField multiline rows={4} variant='outlined' placeholder='enter massage name!' label="Message" fullWidth required name='message'/>
                 </Grid>
                 <Grid item xs={12}>
-                  <Button type='submit' variant='contained' color='primary' fullWidth>Submit</Button>
+                  <Button type='submit' variant='contained' color='primary' fullWidth >Send</Button>
 
                 </Grid>
 

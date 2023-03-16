@@ -23,7 +23,7 @@ const Hero = () => {
 
             px={15}
             py={6}
-            fontWeight={'bold'} fontSize= "100px" >IZIK</Typography>
+            fontWeight={'bold'} fontSize= "100px" >IKIZ</Typography>
           {/* <Typography variant="h4" color="initial">Cartain</Typography> */}
 
         </Box>

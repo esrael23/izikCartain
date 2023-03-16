@@ -7,7 +7,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
 
-const Massage = () => {
+const Message = () => {
   return (
     <>
     <Container maxWidth="xl" >
@@ -76,4 +76,4 @@ On the way to bla bla ena sefere ezaw new </Typography>
   )
 }
 
-export default Massage
+export default Message

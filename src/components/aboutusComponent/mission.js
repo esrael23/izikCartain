@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import { Box } from '@mui/material'
 import { AboutData } from '../../Data/AboutData'
-import { grey, red, yellow } from '@mui/material/colors'
+import { grey } from '@mui/material/colors'
 
 const Mission = () => {
   const greys = grey[50];
@@ -19,7 +19,7 @@ const Mission = () => {
       <Grid container spacing={2}>
         
             <Grid item xs="12" sm="12" md="6">
-          <Box  sx={{display: 'flex', justifyContent:'center', alignItems:'center'}}  height="400px" fullwidth>
+          <Box  sx={{display: 'flex', justifyContent:'center', alignItems:'center', paddingY: '20px'}}  height="400px" fullwidth>
             <Box justifyContent={'center'}>
               <Typography variant="h6" color={'primary'}>MISSION</Typography>
             <Typography variant="subtitle1" >
