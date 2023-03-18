@@ -8,7 +8,9 @@ const ServHead = () => {
       <Box height={"35vh"} width="100%" sx={{backgroundImage: `url(${Bgimage})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundAttachment:'fixed'}}>
         <Box  height={"35vh"} width="100%" sx={{background:'black', opacity:'0.3', display:'flex',
         justifyContent:'center', alignItems: 'center'}} >
-          <Typography variant="h3" color={'white'} sx={{opacity:'1'}}>The beauty of your house Ikiz Curtain</Typography>
+          <Typography variant="h4" color={"white"} sx={{fontSize: {xs: '20px', sm: '30px', md: '40px'}, textAlign: 'center'}} >
+            The beauty of your house Ikiz Curtain
+            </Typography>
         </Box>
       </Box>
     </div>
