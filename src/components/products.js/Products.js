@@ -7,15 +7,13 @@ import { ProductData } from '../../Data/ProductData'
 const Products = () => {
   return (
     <>
-    <Box>
+    <Box alignContent={"center"}>
     <Container maxWidth="lg">
-      <Typography variant="h6" fontSize={'40px'} fontFamily={'poppins'} fontWeight={"bold"} color="primary"  pt={5} pb={5}>SAMPLE PRODUCTS</Typography>
+      <Typography variant="h6" sx={{fontSize: {xs:'20px', md: '30px'}}} fontFamily={'poppins'} fontWeight={"bold"} color="primary" pt={5} pb={5}>SAMPLE PRODUCTS</Typography>
           <Grid container spacing={4}>
             {ProductData.map((pro, index)=> {
         return(
         <Grid item xs="12" sm="6" md="6" lg="3" >
-
-
 <Card sx={{ maxWidth: 345 }} elevation="0.2">
       <CardActionArea>
         <CardMedia
