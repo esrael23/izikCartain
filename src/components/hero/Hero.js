@@ -10,18 +10,13 @@ const Hero = () => {
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat', alignItems: 'center', display: 'flex', justifyContent: 'center'}}>
         <Box sx={{display: 'flex',opacity:"0.5",
-        //  height:'300px',
-
-          // width: '800px',
-          // bgcolor: 'white',
+      
           background:'white',
-           justifyContent: 'center' }}>
+           justifyContent: 'center'  }} width={"100%"}>
           <Typography
            variant="h1"
             color="primary"
           sx={{opacity:"1"}}
-
-            px={15}
             py={6}
             fontWeight={'bold'} fontSize= "100px" >IKIZ</Typography>
           {/* <Typography variant="h4" color="initial">Cartain</Typography> */}
