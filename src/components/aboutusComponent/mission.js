@@ -16,7 +16,7 @@ const Mission = () => {
     <Container maxWidth="xl" py='1'>
       {AboutData.map((data, index) =>{
           return(
-      <Grid container spacing={2}>
+      <Grid container spacing={2} paddingY={'10px'}>
         
             <Grid item xs="12" sm="12" md="6">
           <Box  sx={{display: 'flex', justifyContent:'center', alignItems:'center', paddingY: '20px'}}  height="400px" fullwidth>
