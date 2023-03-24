@@ -56,6 +56,9 @@ const Footer = () => {
                    <IconButton href='https://t.me/ikizcurtain'>
                   <TelegramIcon color='black' sx={{fontSize:'40px'}}/>
                    </IconButton>
+                   <IconButton href='https://www.tiktok.com/@ikiz_curtain?_t=8auGvVIqJaX&_r=1'>
+                   <img src="https://img.icons8.com/ios/50/000000/tiktok--v1.png"/>
+                   </IconButton>
                 </Stack>
             </Grid>
           </Grid>
