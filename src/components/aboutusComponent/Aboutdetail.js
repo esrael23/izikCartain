@@ -12,7 +12,7 @@ const Aboutdetail = () => {
         {AboutData.map((data, index) => {
           return (
           <Box textAlign={'center'}>
-          <Typography variant="h6" align='center' pb={4} fontWeight="300" >{data.detail}</Typography>
+          <Typography variant="body1" align='center' pb={4} fontWeight="300" sx={{fontSize:{xs:"15px", sm:'20px', md: '25px' }}} >{data.detail}</Typography>
           <Button variant="outlined" size='large' href='./contactus'>Contact us
             
           </Button>
