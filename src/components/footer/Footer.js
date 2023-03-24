@@ -41,7 +41,7 @@ const Footer = () => {
               
               <Typography variant="h6" color="black" fontFamily={'poppins'}>Our Address</Typography>
               <Typography variant="subtitle1" color="black" fontFamily={'poppins'}
-              fontWeight={'250'}>chichinia on the way to name hotel mall 1st floor</Typography>
+              fontWeight={'250'}>On the road leading to the 22 bridge from Bole Atlas mebrat</Typography>
               <Typography variant="h6" color="black" fontFamily={'poppins'}>Write Us</Typography>
               <Typography variant="subtitle1" color="black">Ikizcurtain@gmail.com</Typography>
               <Typography variant="h6" color="black" fontFamily={'poppins'}>Follow Us</Typography>
