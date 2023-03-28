@@ -111,7 +111,7 @@ const UpLoadimage = () => {
         getData()
         setOpenAl(true);
         setImage(null);
-        fileInputRef.current.click();
+        // fileInputRef.current.click();
       });
     }
   }
