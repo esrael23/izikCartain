@@ -10,6 +10,7 @@ import Appindex from './components/appbar/appindex';
 import Footer from './components/footer/Footer';
 import Upload from "./Admin/Upload";
 import LoginPage from "./Admin/LoginPage";
+import UpLoadimage from "./Admin/AdminPage";
 // import UpLoadForm from "./firebase/UpLoadForm";
 
 // let theme = createTheme();
@@ -25,14 +26,10 @@ function App() {
           <Route path="/aboutus" element={<AboutUs/>} />
           <Route path="/work" element={<OurWorks/>} />
           <Route path="/contact" element={<Contacts/>} />
-          <Route path="/ikizadmin" element={<Upload/>} />
-
+          <Route path="/ikizadmin" element={<UpLoadimage/>} />
         </Routes>
       </Router>
       <Footer/>
-       
-      
-    
     </ThemeProvider>
    
   );
