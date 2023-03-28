@@ -3,6 +3,7 @@ import React from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import Logo from '../../image/ikizLogo1.png'
 
 const Appbarmobile = () => {
 
@@ -21,9 +22,7 @@ const Appbarmobile = () => {
     <AppBar position="fixed" sx={{backgroundColor: 'white'}}>
   <Toolbar variant="dense" sx={{justifyContent: 'space-between'}}>
     
-    <Typography variant="h6" color="inherit" component="div">
-      logo
-    </Typography>
+  <img src={Logo} alt="Logo" style={{ height: '50px', marginRight: '10px' }} />
     <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}
     
     id="basic-button"
