@@ -23,8 +23,7 @@ const Appbarmobile = () => {
   <Toolbar variant="dense" sx={{justifyContent: 'space-between'}}>
     
   <img src={Logo} alt="Logo" style={{ height: '50px', marginRight: '10px' }} />
-    <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}
-    
+    <IconButton edge="start" color="inherit" aria-label="menu"
     id="basic-button"
     aria-controls={open ? 'basic-menu' : undefined}
     aria-haspopup="true"
